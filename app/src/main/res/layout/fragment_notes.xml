@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="io.qthjen_dev.notesandplans.Fragment.NotesFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_temp3"
+        android:layout_margin="@dimen/marginLarge"
+        android:background="@drawable/search_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/searchheight">
+
+        <AutoCompleteTextView
+            android:maxLines="1"
+            android:id="@+id/et_search"
+            android:layout_toLeftOf="@+id/iv_search"
+            android:paddingLeft="@dimen/quiteMargin"
+            android:textColor="@color/textBlack"
+            android:hint="@string/search"
+            android:cursorVisible="false"
+            android:background="@drawable/search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/bticon"
+            android:layout_height="@dimen/bticon" />
+
+        <ImageView
+            android:id="@+id/iv_searchClear"
+            android:visibility="invisible"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@drawable/clear"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/bticon"
+            android:layout_height="@dimen/bticon" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewNote"
+        android:layout_above="@+id/relative_temp1"
+        android:layout_below="@+id/relative_temp3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:background="@drawable/elevation_top_view"
+        android:id="@+id/relative_temp1"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/bt_createNote"
+            android:paddingBottom="@dimen/mediumMargin"
+            android:paddingTop="@dimen/mediumMargin"
+            android:paddingLeft="@dimen/mediumMargin"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="@dimen/bottombarwidth"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_temp1"
+                android:src="@drawable/add"
+                android:layout_width="@dimen/bticonmedium"
+                android:layout_height="@dimen/bticonmedium" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/mediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/takeanote"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginRight="@dimen/quiteMargin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_addnote"
+            android:src="@drawable/addphoto"
+            android:layout_width="@dimen/bticonmedium"
+            android:layout_height="@dimen/bticonmedium" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

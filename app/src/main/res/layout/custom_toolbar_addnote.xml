@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingRight="@dimen/supperMediumMargin">
+
+    <ImageView
+        android:src="@drawable/closedown"
+        android:id="@+id/iv_clear"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/bticonquite"
+        android:layout_height="@dimen/bticonquite" />
+
+    <TextView
+        android:text="@string/addnote"
+        android:layout_marginLeft="@dimen/quiteMargin"
+        android:layout_marginRight="@dimen/quiteMargin"
+        android:textColor="@color/textBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/quiteText"
+        android:id="@+id/tv_titleAddTbar"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_clear"
+        android:layout_toLeftOf="@+id/iv_favoriteBoder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginRight="@dimen/bigMargin"
+        android:src="@drawable/favorite"
+        android:id="@+id/iv_favorite"
+        android:layout_toLeftOf="@+id/iv_addAlert"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/bticonquite"
+        android:layout_height="@dimen/bticonquite" />
+
+    <ImageView
+        android:visibility="visible"
+        android:layout_marginRight="@dimen/bigMargin"
+        android:src="@drawable/favoriteborder"
+        android:id="@+id/iv_favoriteBoder"
+        android:layout_toLeftOf="@+id/iv_addAlert"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/bticonquite"
+        android:layout_height="@dimen/bticonquite" />
+
+    <ImageView
+        android:layout_marginRight="@dimen/bigMargin"
+        android:src="@drawable/addalert"
+        android:id="@+id/iv_addAlert"
+        android:layout_toLeftOf="@+id/iv_archive"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/bticonquite"
+        android:layout_height="@dimen/bticonquite" />
+
+    <ImageView
+        android:src="@drawable/archive"
+        android:id="@+id/iv_archive"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/bticonquite"
+        android:layout_height="@dimen/bticonquite" />
+
+</RelativeLayout>

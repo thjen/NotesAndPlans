@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Notes And Plans</string>
+
+    <string name="home">Home</string>
+    <string name="note">Notes</string>
+    <string name="note1">Note</string>
+    <string name="plan">Plans</string>
+    <string name="takeanote">Create a note</string>
+    <string name="addnote">Add a note</string>
+    <string name="added">Added</string>
+    <string name="takephoto">Take photo</string>
+    <string name="chooseimage">Choose image</string>
+    <string name="addcolor">Note color</string>
+    <string name="copy">Make a copy</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+
+    <string name="addfavorite">You added to favorite list</string>
+    <string name="removefavorite">You removed this note from favorite list</string>
+    <string name="addsucc">Add successfully</string>
+    <string name="addfailed">Add failed</string>
+    <string name="done">Done</string>
+    <string name="imagefolder">Image folder</string>
+    <string name="themecolor">Note color</string>
+    <string name="folderIma">Folder image</string>
+
+</resources>

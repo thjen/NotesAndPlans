@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="io.qthjen_dev.notesandplans.Activity.AddNote">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tbar_add"/>
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/mediumMargin"
+        android:paddingBottom="@dimen/smallMargin"
+        android:paddingLeft="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:id="@+id/bt_folderImage"
+        android:layout_below="@+id/tbar_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_folder"
+            android:layout_width="@dimen/iconfolderWidth"
+            android:layout_height="@dimen/iconfolderHeight"
+            android:src="@drawable/folder" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/smallText"
+            android:layout_below="@+id/iv_folder"
+            android:text="@string/imagefolder"
+            android:layout_width="@dimen/iconfolderWidth"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bt_addcolor"
+        android:layout_toLeftOf="@+id/bt_folderImage"
+        android:layout_below="@+id/tbar_add"
+        android:paddingRight="@dimen/mediumMargin"
+        android:paddingBottom="@dimen/smallMargin"
+        android:paddingLeft="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_color"
+            android:layout_width="@dimen/iconfolderWidth"
+            android:layout_height="@dimen/iconfolderHeight"
+            android:src="@drawable/addcolor" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/smallText"
+            android:layout_below="@+id/iv_color"
+            android:text="@string/themecolor"
+            android:layout_width="@dimen/iconfolderWidth"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_above="@+id/relative_temp2"
+        android:layout_below="@id/bt_folderImage"
+        android:textColorHint="@color/textBlack"
+        android:cursorVisible="false"
+        android:textColor="@color/textSuperBlack"
+        android:id="@+id/et_description"
+        android:padding="@dimen/quiteMargin"
+        android:hint="@string/note1"
+        android:gravity="top"
+        android:background="@color/searchbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:background="@drawable/elevation_top_view"
+        android:visibility="invisible"
+        android:id="@+id/expandable_menuMore"
+        android:layout_above="@+id/relative_temp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/mediumMargin"
+            android:id="@+id/bt_delete"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottomBar">
+
+            <ImageView
+                android:src="@drawable/delete"
+                android:layout_width="@dimen/bticonmedium"
+                android:layout_height="@dimen/bticonmedium" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:text="@string/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/mediumMargin"
+            android:layout_below="@+id/bt_delete"
+            android:id="@+id/bt_copy"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottomBar">
+
+            <ImageView
+                android:src="@drawable/contentcopy"
+                android:layout_width="@dimen/bticonmedium"
+                android:layout_height="@dimen/bticonmedium" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:text="@string/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/elevation_top_view"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relative_temp2"
+        android:padding="@dimen/mediumMargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomBar">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:gravity="left"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/menu_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/menu_box"
+            android:padding="@dimen/iconmoreboxpadding"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/bticonmedium"
+            android:layout_height="@dimen/bticonmedium">
+
+            <android.support.v7.widget.CardView
+                app:cardBackgroundColor="@color/textBlack"
+                app:cardCornerRadius="@dimen/supersmallradius"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/morehori"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

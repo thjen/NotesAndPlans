@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.qthjen_dev.notesandplans.Activity.FolderImage">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tbar_folderimage"/>
+
+    <com.etsy.android.grid.StaggeredGridView
+        android:layout_below="@+id/tbar_folderimage"
+        app:item_margin="8dp"
+        app:column_count="2"
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.etsy.android.grid.StaggeredGridView>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandable_menuImage"
+        android:layout_marginRight="@dimen/quiteMargin"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/fab_addimage"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:elevation="0dp"
+            app:elevation="0dp"
+            android:src="@drawable/camera"
+            android:id="@+id/fab_takeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/quiteMargin"/>
+
+        <android.support.design.widget.FloatingActionButton
+            app:elevation="0dp"
+            android:elevation="0dp"
+            android:src="@drawable/choosephoto"
+            android:layout_below="@+id/fab_takeImage"
+            android:id="@+id/fab_chooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        app:elevation="0dp"
+        android:elevation="0dp"
+        android:src="@drawable/add"
+        android:id="@+id/fab_addimage"
+        android:layout_margin="@dimen/quiteMargin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:visibility="invisible"
+        android:src="@drawable/clear"
+        android:id="@+id/fab_clear"
+        android:layout_margin="@dimen/quiteMargin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

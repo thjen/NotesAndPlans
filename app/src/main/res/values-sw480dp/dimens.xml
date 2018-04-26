@@ -1,0 +1,44 @@
+<resources>
+
+<dimen name="marginLarge">16.0dp</dimen>
+<dimen name="smallMargin">5.0dp</dimen>
+<dimen name="mediumMargin">10.0dp</dimen>
+<dimen name="quiteMargin">15.0dp</dimen>
+<dimen name="supperMediumMargin">20.0dp</dimen>
+<dimen name="bigMargin">25.0dp</dimen>
+<dimen name="supperLargeMargin">30.0dp</dimen>
+<dimen name="nestedMargin">110.0dp</dimen>
+
+<dimen name="smallRadius">5.0dp</dimen>
+<dimen name="mediumRadius">10.0dp</dimen>
+<dimen name="largeRadius">15.0dp</dimen>
+<dimen name="supersmallradius">4.0dp</dimen>
+<dimen name="superRadius">200.0dp</dimen>
+<dimen name="smallElevation">2.0dp</dimen>
+<dimen name="largeElevation">5.0dp</dimen>
+
+<dimen name="bticon">30.0dp</dimen>
+<dimen name="bticonmedium">40.0dp</dimen>
+<dimen name="bticonquite">35.0dp</dimen>
+<dimen name="btswipeheight">35.0dp</dimen>
+<dimen name="btswipewidth">120.0dp</dimen>
+<dimen name="bottombarwidth">445.0dp</dimen>
+<dimen name="iconmoreboxpadding">4.0dp</dimen>
+<dimen name="bottomBar">60.0dp</dimen>
+<dimen name="searchheight">40.0dp</dimen>
+<dimen name="iconcolor">70.0dp</dimen>
+<dimen name="btdone">80.0dp</dimen>
+<dimen name="heightIcondone">30.0dp</dimen>
+<dimen name="iconfolderHeight">80.0dp</dimen>
+<dimen name="iconfolderWidth">100.0dp</dimen>
+
+<dimen name="divider">1.0dp</dimen>
+<dimen name="largeShadow">1.5dp</dimen>
+
+<dimen name="smallText">15.0sp</dimen>
+<dimen name="mediumText">20.0sp</dimen>
+<dimen name="quiteText">25.0sp</dimen>
+<dimen name="largeText">30.0sp</dimen>
+<dimen name="superLargeText">35.0sp</dimen>
+
+</resources>

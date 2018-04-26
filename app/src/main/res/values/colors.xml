@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#05ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryBackup">#3F51B5</color>
+    <color name="colorPrimaryDarkBackup">#303F9F</color>
+
+    <color name="textWhite">#ffffff</color>
+    <color name="textBlack">#737373</color>
+    <color name="textSuperBlack">#000000</color>
+
+    <color name="btswipepager">#ffa726</color>
+    <color name="swipepager">#fff43c</color>
+    <color name="white">#ffffff</color>
+    <color name="textcolor">#9E9E9E</color>
+    <color name="textColor">#737373</color>
+    <color name="searchbg">#F1F1F3</color>
+
+    <!-- list color added -->
+    <color name="colorOne">#A5FF18</color>
+    <color name="colorTwo">#EB82FF</color>
+    <color name="colorThree">#18DCFF</color>
+    <color name="colorFour">#FFF467</color>
+    <color name="colorFive">#FC5161</color>
+
+</resources>

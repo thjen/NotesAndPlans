@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/title_tbar"
+        android:textColor="@color/textBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/largeText"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/lltemp1"/>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/supperMediumMargin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/lltemp1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/tbar_main"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/bt_note"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/btswipewidth"
+            android:layout_height="@dimen/btswipeheight">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/smallMargin"
+                android:id="@+id/iv_note"
+                android:layout_width="@dimen/bticon"
+                android:layout_height="@dimen/bticon" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:id="@+id/tv_note"
+                android:text="@string/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/bt_plan"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/btswipewidth"
+            android:layout_height="@dimen/btswipeheight">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/smallMargin"
+                android:id="@+id/iv_plan"
+                android:layout_width="@dimen/bticon"
+                android:layout_height="@dimen/bticon" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:id="@+id/tv_plan"
+                android:text="@string/plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
